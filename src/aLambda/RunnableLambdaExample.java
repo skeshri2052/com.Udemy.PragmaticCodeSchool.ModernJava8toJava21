@@ -1,18 +1,18 @@
 package aLambda;
 
 public class RunnableLambdaExample {
-
-    /**
-     *  prior java 8
-     */
     public static void main(String[] args) {
-        Runnable r = new Runnable(){
+        /**
+         *  prior java 8
+         */
+        Runnable r = new Runnable(){ //anonymous class
             @Override
             public void run(){
                 System.out.println("Inside runnable");
             }
         };
         new Thread(r).start();
+
         /**
          * Java 8 Lambda
          */
